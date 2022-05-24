@@ -108,6 +108,8 @@ function processNode(node) {
     }
 }
 
-window.addEventListener("load", function () {
-    processNode(document.body);
-});
+// This event listener fires when the page loads
+window.addEventListener("load", function(event) { processNode(event.target); }, false);
+
+// This event listener fires the script on content that's dynamically loaded in (i.e. expanding pages)
+document.body.addEventListener('DOMNodeInserted', function(event) { processNode(event.target); }, false);
