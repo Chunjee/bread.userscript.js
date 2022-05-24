@@ -1,13 +1,14 @@
 // ==UserScript==
-// @name        Bread
-// @match       <all_urls>
-// @version     1.0.1
-// @author      Toby
-// @description Bread (Bionic Reading) - Read text faster & easier
-// @require     https://openuserjs.org/src/libs/sizzle/GM_config.js
-// @grant       GM_getValue
-// @grant       GM_setValue
-// @grant       GM_registerMenuCommand
+// @name         Bread
+// @description  Bread - Read text faster & easier
+// @version      0.1.0
+// @match        *://*/*
+// @author       Chunjee
+// @namespace    http://github.com/Chunjee
+// @require      https://openuserjs.org/src/libs/sizzle/GM_config.js
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_registerMenuCommand
 // ==/UserScript==
 
 GM_config.init(
