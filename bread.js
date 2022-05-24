@@ -12,37 +12,37 @@
 // ==/UserScript==
 
 GM_config.init(
-    {
-        'id': 'BreadConfig',
-        'title': 'Bread Configuration',
-        'fields':
-        {
-            'MinWordLength':
-            {
-                'label': 'Minimum word length',
-                'type': 'int',
-                'min': 1,
-                'max': 20,
-                'default': 4,
-            },
-            'MinTextLength':
-            {
-                'label': 'Minimum text length',
-                'type': 'int',
-                'min': 1,
-                'max': 500,
-                'default': 50,
-            },
-            'BoldRatio':
-            {
-                'label': 'Bold ratio',
-                'type': 'float',
-                'min': 0.1,
-                'max': 1,
-                'default': 0.4,
-            },
-        }
-    });
+	{
+		'id': 'BreadConfig',
+		'title': 'Bread Configuration',
+		'fields':
+		{
+			'MinWordLength':
+			{
+				'label': 'Minimum word length',
+				'type': 'int',
+				'min': 1,
+				'max': 20,
+				'default': 4,
+			},
+			'MinTextLength':
+			{
+				'label': 'Minimum text length',
+				'type': 'int',
+				'min': 1,
+				'max': 500,
+				'default': 50,
+			},
+			'BoldRatio':
+			{
+				'label': 'Bold ratio',
+				'type': 'float',
+				'min': 0.1,
+				'max': 1,
+				'default': 0.47,
+			},
+		}
+	});
 
 GM_registerMenuCommand('Configuration', () => {
     GM_config.open()
